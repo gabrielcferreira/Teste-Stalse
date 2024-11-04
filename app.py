@@ -18,10 +18,11 @@ def index():
 
 
 # RENDERIZE OS VALORES DO DATAFRAME df EM UMA TABELA HTML DENTRO DA PÁGINA /table.html (CRIE UM HTML PARA ISSO)
+
+#Criação da rota para a página '/table' com as informações do dataframe.
 @app.route('/table')
 def table():
 
-# Alterei a forma de execução do dataframe por ter uma melhor visualização 
     df = pd.DataFrame({
     'alunos': ['Renato', 'Fernando', 'Rodrigo', 'Ana', 'Joana', 'Silvio', 'Carolina'],
     'notas': [15.00, 39.58, 62.92, 41.46, 48.33, 63.13, 70.00]
