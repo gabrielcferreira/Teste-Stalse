@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Notas</title>
+</head>
+<body>
+    <!-- Escrita criada para seguir o padrão da index com h1-->
+    <h1>Nesta página você irá encontrar a tabela criada a partir de um dataframe</h1>
+    <!-- Escrita também criada para seguir o padrão da index e com finalidade de escrever um paragráfo para entender o funcionamento -->
+    <p>Aqui constam os alunos:</p> 
+    
+     <!--¹ Chave criada para que o dataframe criado seja renderizado dentro do html de forma correta e não perca nenhum caractere.
+      A variável table é a referência que carrega o que está dentro de table_html no arquivo app.py.
+      *** este conhecimento foi obtido através da documentação Flask na parte de Templates e um entendimento mais profundo pesquisando 
+     na internet e comunidades***-->
+    {{ table|safe }}
+        
+    
+</body>
+
+</html>
